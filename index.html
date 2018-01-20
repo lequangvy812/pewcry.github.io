@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta property="fb:admins" content="100012668051362">
+  <meta name="author" content="SvenJuniorTeam">
+  <meta name="author" content="Lê Quang Vỹ">
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="">
+  <meta property="og:image" content="https://lh3.googleusercontent.com/X2GMuxInxpA_QtzmJcLqA0BDbcmq2Z9tlS-OpZd4K7J5zQl0_2ncWvXOmDB7Gj4B2RDFhO9R1ytyCaE=w1600-h804">
+  <meta name="description" content="It'sTalk Community | Trang Chủ">
+  <meta name="keywords" content="IT,It'sTalk,Coder,Web,Developer">
+  <link rel="shortcut icon" href="/icon.ico">
+  <title>Trang Chủ | It'sTalk</title>
+  <script>
+//Facebook SDK !
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : 'your-app-id',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.10'
+    });
+    FB.AppEvents.logPageView();
+  };
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+//Show Mobile Menu Block
+$(document).ready(function(){
+ $('#bar').click(function(){
+   $('#menu-mobile').animate({height:'toggle'});
+ });
+});
+//Loader
+ $(window).load(function() {
+    $(".se-pre-con").fadeOut('slow');;
+});
+// Scroll to top
+  $(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.scrollToTop').fadeIn();
+    } else {
+      $('.scrollToTop').fadeOut();
+    }
+  });
+  $('.scrollToTop').click(function(){
+    $('html, body').animate({scrollTop : 0},800);
+    return false;
+  });
+});
+ </script>
+</head>
+<body>
+<!--Box Menu Desktop-->
+ <div id="row">
+    <a href="http://itstalk.byethost32.com/"><li><div class="box" id="logo"><i class="fa fa-angle-right" aria-hidden="true"></i> It'sTalk </div></li></a>
+    <a href="http://itstalk.byethost32.com/tech"><li><div class="box" id="tech"><i class="fa fa-laptop" aria-hidden="true"></i> CÔNG NGHỆ</div></li></a>
+    <a href="http://itstalk.byethost32.com/code"><li><div class="box" id="code"><i class="fa fa-code" aria-hidden="true"></i> LẬP TRÌNH</div></li></a>
+    <a href="http://itstalk.byethost32.com/file"><li><div class="box" id="files"><i class="fa fa-file-text-o" aria-hidden="true"></i> TÀI LIỆU</div></li></a>
+    <a href="http://itstalk.byethost32.com/blog"><li><div class="box" id="blog"><i class="fa fa-rss" aria-hidden="true"></i> BLOG</div></li></a>
+    <li><div id="search" class="box"><input type="text" id="search-box" autocomplete="off" placeholder=""></input><button id="btn"><i class="fa fa-search" aria-hidden="true"></i></button></div></li>
+    <li><div class="box" id="bar"><i class="fa fa-bars" aria-hidden="true"></i></div></li>
+ </div>
+<!--Box Menu Mobile-->
+<div id="menu-mobile">
+  <a href="http://itstalk.byethost32.com/tech"><li><div class="menu-mobile-block" id="mobile-tech"><i class="fa fa-laptop" aria-hidden="true"></i> CÔNG NGHỆ</div></li></a>
+  <a href="http://itstalk.byethost32.com/code"><li><div class="menu-mobile-block" id="mobile-code"><i class="fa fa-code" aria-hidden="true"></i> LẬP TRÌNH</div></li></a>
+  <a href="http://itstalk.byethost32.com/file"><li><div class="menu-mobile-block" id="mobile-files"><i class="fa fa-file-text-o" aria-hidden="true"></i> TÀI LIỆU</div></li></a>
+  <a href="http://itstalk.byethost32.com/blog"><li><div class="menu-mobile-block" id="mobile-blog"><i class="fa fa-rss" aria-hidden="true"></i> BLOG</div></li></a>
+  <li class=search><div id="mobile-search" class="menu-mobile-block"><input type="text" id="mobile-search-box" autocomplete="off" placeholder=""></input><button id="mobile-button"><i class="fa fa-search" aria-hidden="true"></i></button></div></li>
+</div>
+<div id="wrap-all">
+<!--Col-Left-->
+  <div id="col-left">
+    <div id="container-left">
+      <div id="content-left">
+<!--New-->
+              <div id="other-post">
+                   <div id="other-post-content">Mới Nhất</div><div id="space"></div>
+                   <div id="other-post-link">
+                    <li>
+                         <a href="http://itstalk.byethost32.com/file/dowload-bluestack-ban-mod"><img src="https://vanhienblog.com/wp-content/uploads/2017/04/BlueStacks-2.5.4.8001-%C4%91a-Root.jpg" width="100%">Dowload Phần Mềm Giả Lập Android BlueStack Bản Mod</a>
+                       </br>
+                         <time>17/10/2017/time>
+                         <p>Bản mod được làm trên Bluestack phiên bản 1.1.11.8004- Đã được root bằng SuperSU ,đã gỡ bỏ hoàn toàn ứng dụng quảng cáo của Bluestacks, đã cài đặt sẵn Xposed Installer...</p>
+                     </li>
+                     <li>
+                         <a href="http://itstalk.byethost32.com/file/dowload-photoshop-cc-portable"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/72d40a44665625.581b167143ab9.jpg" width="100%">Download Photoshop CC (14.0) Portable không cần cài đặt</a>
+                       </br>
+                         <time>17/10/2017</time>
+                         <p>Photoshop CC là phiên bản thứ 14 của Photoshop, phiên bản mới nhất tính đến thời điểm hiện tại của Photoshop. Hôm nay mình xin chia sẻ bản Portable...</p>
+                     </li>
+                    <li>
+                         <a href="http://itstalk.byethost32.com/code/10-dieu-khong-duoc-lam-trong-php-7"><img src="https://kinsta.com/wp-content/uploads/2015/11/10-Things-Not-To-Do-In-PHP7.jpg" width="100%">10 điều không được làm trong PHP 7</a>
+                       </br>
+                         <time>16/10/2017</time>
+                         <p>Thời đại này cuối cùng cũng đến khi bạn sẽ không chỉ được khuyên là dừng sử dụng các hàm mysql_ mà PHP 7 còn sẽ loại bỏ tất cả chúng ra khỏi core, nghĩa là bạn buộc phải dùng các hàm mysqli_ tốt hơn nhiều, hoặc la tích hợp PDO uyển chuyển hơn...</p>
+                     </li>
+                    <li>
+                         <a href="http://itstalk.byethost32.com/tech/so-sanh-5-api-hang-dau-cua-computer-vision"><img src="https://blog.topdev.vn/wp-content/uploads/2017/09/computervision-696x390.jpeg" width="100%">So sánh 5 API hàng đầu của Computer Vision</a></br>
+                         <time>15/10/2017</time>
+                         <p>Trong sáu tháng qua, Google, Microsoft và IBM đã công bố một bộ “API thông minh” cung cấp nhiều loại hình hình ảnh, video, giọng nói và nhận dạng văn bản...</p>
+                     </li>
+                    <li>
+                         <a href="http://itstalk.byethost32.com/code/lap-trinh-kotlin-se-thay-the-java-vao-thang-12-nam-2018"><img src="https://techtalk.vn/wp-content/uploads/2017/09/kotlin-1-218x150.jpg" width="100%">Lập trình Kotlin sẽ thay thế Java vào tháng 12 năm 2018</a></br>
+                         <time>14/10/2017</time>
+                         <p>Một báo cáo gần đây cho biết, trong tương lai Kotlin sẽ có thể thay thế hoàn toàn Java. Điều gì đã làm nên sự thành công cho ngôn ngữ mới này?</p>
+                     </li>
+                    <li>
+                         <a href="http://itstalk.byethost32.com/code/su-troi-day-cua-python-js-va-php"><img src="https://static.techtalk.vn/wp-content/uploads/2017/10/TIOBE-index-696x465.png" width="100%">[ TIOBE tháng 9 ] Sự trỗi dậy của Python, JS và PHP</a></br>
+                         <time>19/9/2017</time>
+                         <p>TIOBE Programming Community index là một bảng xếp hạng các loại ngôn ngữ lập trình nổi bật và thông dụng nhất trong công đồng IT....</p>
+                     </li>
+                     <li>
+                         <a href="http://itstalk.byethost32.com/code/vi-sao-toi-chon-rust-bo-qua-golang-va-cc"><img src="https://research.mozilla.org/files/2017/05/mozrust-1400x770.png" width="100%">Vì sao tôi chọn Rust, bỏ qua Golang và C/C++?</a></br>
+                         <time>12/9/2017</time>
+                         <p>Rust là gì? Rust là ngôn ngữ lập trình được hậu thuẫn bởi Mozilla Research. Nó tiến triển rất nhanh và vững chắc, cứ 6 tuần cập nhật...</p>
+                     </li>
+                     <li>
+                         <a href="#"><img src="https://static.techtalk.vn/wp-content/uploads/2017/09/Ai-218x150.png" width="100%">5 ngôn ngữ lập trình tốt nhất dành cho phát triển AI</a></br>
+                         <time>12/8/2017</time>
+                         <p>Bạn là một người có niềm đam mê với trí tuệ nhân tạo (AI – artificial intelligence) và đang phân vân không biết nên chọn ngôn ngữ lập trình nào cho dự án AI của mình? Vậy thì, trong khuôn khổ bài viết hôm nay..</p>
+                     </li></div>
+<!--Tech-->
+                   <div id="other-post-content">Công Nghệ</div><div id="space"></div>
+                   <div id="other-post-link">
+                    <li>
+                         <a href="#"><img src="https://static.techtalk.vn/wp-content/uploads/2017/10/59de8c1092406c9d018b6078-218x150.jpeg" width="100%">Các ngôn ngữ lập trình thông dụng nhất, theo Github</a></br>
+                         <time>13/10/2017</time>
+                         <p>Nếu bạn muốn được các công ty công nghệ săn đón, bạn sẽ cần phải lựa chọn đúng loại ngôn ngữ lập trình cho...</p>
+                     </li>
+                     <li>
+                         <a href="#"><img src="https://static.techtalk.vn/wp-content/uploads/2017/10/artificial-intelligence-796x398-218x150.jpg" width="100%">AI giờ đã có khả năng giúp developer làm game</a></br>
+                         <time>12/10/2017</time>
+                         <p>Cha đẻ của Unity, game engine nổi tiếng nhất thế giới, vừa mới tung ra một set machine-learning tools để tạo ra một AI...</p>
+                     </li>
+                     <li>
+                         <a href="#"><img src="https://static.techtalk.vn/wp-content/uploads/2017/10/windows-10_creators-update-microsoft-218x150.png" width="100%">Windows Developer Day – cập nhật những điểm nổi bật của Windows 10 Fall...</a></br>
+                         <time>12/10/2017</time>
+                         <p>Windows 10 Fall Creators cung cấp một nền tảng có thể truyền cảm hứng giúp lập trình viên ngày càng sáng tạo, để xây...</p>
+                     </li>
+                     <li>
+                         <a href="#"><img src="https://static.techtalk.vn/wp-content/uploads/2017/09/Ai-218x150.png" width="100%">React 16 JavaScript UI library có gì mới?</a></br>
+                         <time>9/9/2017</time>
+                         <p>React 16, phiên bản mới nhất của JavaScript library building UIs, với code đã được viết lại nhằm cải thiện hiệu năng. React 16...</p>
+                     </li>
+                     <li>
+                         <a href="#"><img src="https://techtalk.vn/wp-content/uploads/2017/10/facebook-workplace-chat-desktop-software-screen-share-218x150.png" width="100%">Facebook âm thầm ra app Workplace Chat có khả chia sẻ màn hình</a></br>
+                         <time>9/9/2017</time>
+                         <p>Chúng tôi phát hiện ra Facebook đã âm thầm tung ra app chat trên Win và Mac với tính năng chia sẻ màn hình...</p>
+                     </li></div>
+<!--Game-->
+                    <div id="other-post-content">Game</div><div id="space"></div>
+                   <div id="other-post-link">
+                    <li>
+                         <a href="#"><img src="http://genknews.genkcdn.vn/zoom/310_200/2017/photo-0-1507887213621.jpg" width="100%">Cận cảnh Grimoire - Game 'bắn phép thuật' đỉnh sắp mở miễn phí</a></br>
+                         <time>13/10/2017</time>
+                         <p>Đoạn gameplay chi tiết của game 'bắn phép thuật' đỉnh Grimoire: Manastorm sắp ra mắt miễn phí...</p>
+                     </li>
+                     <li>
+                         <a href="#"><img src="http://genknews.genkcdn.vn/zoom/310_200/2017/photo-35-1507886484319.jpg" width="100%">Chi tiết phiên bản 7.20: Brand và Tahm Kench được buff mạnh</a></br>
+                         <time>13/10/2017</time>
+                         <p>Chúng ta hãy cùng đến với chi tiết phiên bản cập nhật 7.20 của Liên Minh Huyền Thoại...</p>
+                     </li>
+                     <li>
+                         <a href="#"><img src="http://genknews.genkcdn.vn/zoom/310_200/2017/23799946298346ca8a663z-1507878939687.jpg" width="100%">Optimus lên tiếng sau thất bại của đội tuyển VN</a></br>
+                         <time>13/10/2017</time>
+                         <p>Như vậy là CKTG LMHT mùa 7 đã chính thức với đại diện của Việt Nam - GIGABYTE Marines. Khi mà trong ngày thi đấu thứ 2, GAM có chiến thắng đầu tiên vang dội với đội tuyển Bắc Mỹ Immortals...</p>
+                     </li>
+                     <li>
+                         <a href="#"><img src="http://genknews.genkcdn.vn/zoom/310_200/2017/8-1507873938181.jpg" width="100%">The Last Hope bất ngờ có bản Remaster, phát hành trên cả PC</a></br>
+                         <time>13/10/2017</time>
+                         <p>Mới đây, Square Enix đã bất ngờ thông báo về việc họ sẽ thực hiện lại bản Remaster cho tựa game con cưng Star Ocean: The Last Hope (với tên gọi đầy đủ là: Star...</p>
+                     </li>
+                     <li>
+                         <a href="#"><img src="http://genknews.genkcdn.vn/zoom/310_200/2017/d1qbgoj-1507842708377-33-0-394-700-crop-1507843079080-1507868985064.jpg" width="100%">Channing Tatum chính thức vào vai dị nhân Gambit</a></br>
+                         <time>12/10/2017</time>
+                         <p>Nam diễn viên Channing Tatum sẽ gia nhập thế giới dị nhân với vai Gambit và trình làng vào đúng dịp lễ tình nhân năm 2019.</p>
+                     </li></div>
+<!--End-->
+                   </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+<!--Col-Right-->
+  <div id="col-right">
+    <div id="container-right">
+      <div id="block-title">
+<!--Page Plugin-->
+        <div id="block-title-content">Follow Us</div>
+            <div id="space"></div>
+        <div id="block-title-content-event">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FItsTalkCommunity%2F&tabs&width=340&height=196&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=277936119380388" width="110%" height="196" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
+<!--ADS-->
+<img src="ads.gif" alt="" width="100%">
+<!--Coder-->
+        <div id="block-title-content">
+            <span>Tâm Sự</span>
+        </div>
+        <div id="space"></div>
+           <div id="block-title-content-posts">
+              <li><a href="#">Tôi đã bắt đầu với lập trình thiết kế Web như thế nào ?</a></br>
+              <time>11/9/2017</time></li>
+              <li><a href="#">Để thành công trên con đường Lập trình viên</a></br>
+              <time>23/6/2017</time></li>
+              <li><a href="#">Nỗi sợ của Lập trình viên khi bị nhờ sửa máy tính</a></br>
+              <time>21/6/2017</time></li>
+           </div>
+              <div id="more"><a href="#"><div id="block-title-content-more">Xem Thêm <i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
+<!--Events-->
+        <div id="block-title-content">
+            <span>Sự Kiện</span>
+        </div>
+        <div id="space"></div>
+           <div id="block-title-content-event">
+              <li><a href="#"><img src="https://static.techtalk.vn/wp-content/uploads/2017/09/a74_coverhcm-1-80x60.png">How Tiki Made Dzựt Cô Hồn?</a></br>
+              <time>11/9/2017</time></li>
+              <li><a href="#"><img src="https://static.techtalk.vn/wp-content/uploads/2017/09/vws_ebird_fb-80x60.png">Vietnam Web Summit 2017 Trở Lại</a></br>
+              <time>22/9/2017</time></li>
+           </div>
+              <div id="more"><a href="#"><div id="block-title-content-more">Xem Thêm <i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
+<!--Design Area-->
+      <div id="block-title-content">
+            <span>Thiết Kế</span>
+      </div>
+         <div id="space"></div>
+           <div id="block-title-content-event">
+                <li><a href="#"><img src="https://static.techtalk.vn/wp-content/uploads/2017/04/Mobile-Apps-80x60.jpg">Học thiết kế độ họa cấp tốc</a></br>
+                <time>2/9/2017</time></li>
+                <li><a href="#"><img src="http://tubikstudio.com/wp-content/uploads/2017/06/bright-vibe-calendar-UI-design-tubik.png">UI & UX Design thật dễ dàng</a></br>
+                <time>12/8/2017</time></li>
+           </div>
+                <div id="more"><a href="#"><div id="block-title-content-more">Xem Thêm <i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
+<!--Gaming News-->
+       <div id="block-title-content">
+            <span>Tin Game</span>
+      </div>
+         <div id="space"></div>
+           <div id="block-title-content-event">
+                <li><a href="#"><img src="http://genknews.genkcdn.vn/zoom/220_160/2017/httpchannelvcmediavnprupload156201710img201710091458267806-1507536197429.jpg">EvaTeams tham gia CFS 2017</a></br>
+                <time>27/9/2017</time></li>
+                <li><a href="#"><img src="http://genknews.genkcdn.vn/zoom/310_200/2017/3-1507562785165.jpg">Thứ 6 ngày 13 , game thủ đã chuẩn bị chưa ?</a></br>
+                <time>12/5/2017</time></li>
+                <li><a href="#"><img src="http://genknews.genkcdn.vn/zoom/310_200/2017/1-1507558296257.jpg">Top 10 game có độ họa cực đẹp 2017</a></br>
+                <time>5/4/2017</time></li>
+                <li><a href="#"><img src="http://playdota.vn/thumb.php?src=upload/content/2017/cross_almighty/092017/ppy.jpg&zc=1&w=360&h=200&q=100">OG trắng tay trước chính Secret</a></br>
+                <time>27/2/2017</time></li>
+           </div>
+                <div id="more"><a href="#"><div id="block-title-content-more">Xem Thêm <i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
+<!--End Col-Right-->
+      </div>
+    </div>
+  </div>
+</div>
+<!--Footage-->
+<div id="footer">
+  <div id="widget">
+    <div id="widget-content">It'sTalk Community</div>
+    <div id="widget-infor">
+      <li id="footer-facebook"><a href="https://www.facebook.com/ItsTalkCommunity/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></li>
+      <li id="footer-google"><a href="https://plus.google.com/u/1/102262147293466667263" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i>  Google+</a></li>
+      <li id="footer-twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+    </div>
+    <p>Designed with all the <i class="fa fa-heart" aria-hidden="true"></i> in the world by <a href="http://facebook.com/sven812/" target="_blank">SvenJuniorTeam</a></p>
+  </div>
+</div>
+<!--SDK Comment Facebook-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.10&appId=277936119380388";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--Facebook-->
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--Share--> 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59dc67d77fac0afa"></script>
+<!--Loader-->
+<div class="se-pre-con"></div> 
+<!--Scroll to top-->
+<a href="#" class="scrollToTop"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+</body>
+</html>
